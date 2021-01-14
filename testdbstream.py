@@ -37,7 +37,7 @@ df['Login'] = pd.to_datetime(df['Login Time'],format="%a %b %d %X %Y")
 keys = keys_list[len(keys_list)-1:len(keys_list)-6:-1]
 vals = vals_list[len(vals_list)-1:len(vals_list)-6:-1]
 st.write(" " " Lakshman's face recognition security login data" " ")
-st.write("last five logins")
+st.write("Recent five logins")
 st.write("user:" +"\t"+ "date")
 for (i,j) in zip(keys,vals):
         st.write(i+":"+j)
