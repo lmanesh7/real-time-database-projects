@@ -2,6 +2,7 @@ import streamlit as st
 import pandas as pd
 import pyrebase
 import datetime as dt
+from timezones import *
 config = {
     "apiKey": "AIzaSyBz9K9JuS4R6xIJrkVCA6kJ6BcuO_kx9aI",
     "authDomain": "test-a9823.firebaseapp.com",
@@ -31,6 +32,7 @@ for i in us.values():
         vals_list.append(i[j])
 df = pd.DataFrame({"User":keys_list,"Login Time":vals_list})
 df['Login'] = pd.to_datetime(df['Login Time'])
+df['Login']=df['Login'].replace(tzinfo=timezone.utc).astimezone(tz=None)
 
 
 
