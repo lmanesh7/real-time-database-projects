@@ -31,7 +31,7 @@ x = dt.datetime.now().strftime('%c')
 df['z'] = pd.to_datetime(df['z'],format="%d-%m-%Y")
 
 d3 = st.date_input("range",[dt.date(2021,1,9) , dt.date(2021,1,9)])
-st.write(d3)
+#st.write(d3)
 min1 = d3[0]
 max1 = d3[1]
 if max1>=min1:
