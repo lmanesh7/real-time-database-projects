@@ -3,6 +3,7 @@ import pandas as pd
 import pyrebase
 import datetime as dt
 from timezones import *
+from pytz import timezone
 config = {
     "apiKey": "AIzaSyBz9K9JuS4R6xIJrkVCA6kJ6BcuO_kx9aI",
     "authDomain": "test-a9823.firebaseapp.com",
