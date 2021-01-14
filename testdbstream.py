@@ -32,7 +32,7 @@ for i in us.values():
         vals_list.append(i[j])
 df = pd.DataFrame({"User":keys_list,"Login Time":vals_list})
 df['Login'] = pd.to_datetime(df['Login Time'])
-#df['Login']=df['Login'].replace(tzinfo=timezone.utc).astimezone(tz=None)
+df['Login']=df['Login'].tz_localize('UTC').tz_convert('Asia/Kolkata')
 
 
 
