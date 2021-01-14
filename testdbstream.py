@@ -32,8 +32,8 @@ for i in us.values():
         keys_list.append(j)
         vals_list.append(i[j])
 df = pd.DataFrame({"User":keys_list,"Login Time":vals_list})
-df['Login'] = pd.to_datetime(df['Login Time'])
-df['login']=df['Login'].dt.tz_localize('Asia/Kolkata')
+df['LoginUTC'] = pd.to_datetime(df['Login Time'])
+df['loginAsia/Kolkata']=df['Login'].dt.tz_localize('Asia/Kolkata')
 
 
 
@@ -55,7 +55,7 @@ try:
    min1 = d3[0]
    max1 = d3[1]
    if max1>=min1:
-         st.write(df.query("@min1<=Login<=@max1"))
+         st.write(df.query("@min1<=LoginUTC<=@max1"))
    else:
          st.write("To date is shorter than from date ")
 except IndexError:
