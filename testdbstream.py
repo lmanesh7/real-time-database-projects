@@ -33,7 +33,7 @@ for i in us.values():
         vals_list.append(i[j])
 df = pd.DataFrame({"User":keys_list,"Login Time":vals_list})
 df['Login'] = pd.to_datetime(df['Login Time'])
-df['Login']=[i.tz_localize() for i in df['Login'] ]
+df['Login']=df['login'].dt.tz_localize()
 
 
 
