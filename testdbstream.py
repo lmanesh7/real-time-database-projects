@@ -4,8 +4,13 @@ import pyrebase
 import datetime as dt
 from timezones import *
 from pytz import timezone
+import os
+from dotenv import *
+
+load_dotenv(dotenv_path='/.env')
+
 config = {
-    "apiKey": "API_KEY",
+    "apiKey": os.getenv("API_KEY"),
     "authDomain": "test-a9823.firebaseapp.com",
     "databaseURL": "https://test-a9823-default-rtdb.firebaseio.com",
     "projectId": "test-a9823",
