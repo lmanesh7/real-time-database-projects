@@ -8,3 +8,5 @@ Pillow==8.1.0
 Pyrebase4==4.4.3
 streamlit==0.74.1
 timezones==2.0.7
+python-dotenv==0.15.0
+
