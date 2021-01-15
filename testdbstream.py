@@ -5,7 +5,7 @@ import datetime as dt
 from timezones import *
 from pytz import timezone
 config = {
-    "apiKey": "AIzaSyBz9K9JuS4R6xIJrkVCA6kJ6BcuO_kx9aI",
+    "apiKey": "API_KEY",
     "authDomain": "test-a9823.firebaseapp.com",
     "databaseURL": "https://test-a9823-default-rtdb.firebaseio.com",
     "projectId": "test-a9823",
