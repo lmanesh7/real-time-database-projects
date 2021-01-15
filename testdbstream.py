@@ -12,7 +12,7 @@ load_dotenv(dotenv_path='/.env')
 config = {
     "apiKey": os.getenv("API_KEY"),
     "authDomain": "test-a9823.firebaseapp.com",
-    "databaseURL": os.getenv("DB_URL"),
+    "databaseURL": "https://test-a9823-default-rtdb.firebaseio.com",
     "projectId": "test-a9823",
     "storageBucket": "test-a9823.appspot.com",
     "messagingSenderId": "1097818977650",
