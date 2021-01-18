@@ -4,6 +4,7 @@ import streamlit as st
 import pandas as pd
 import datetime as dt
 import plotly.graph_objects as go
+import plotly.express as px
 
 
 df = pd.read_csv("sensor.csv")
@@ -15,6 +16,11 @@ st.title(" " "Manesh's Room Humidity Monitoring!" " ")
 st.write("Humidity level chart")
 st.line_chart(df['y'])
 t = df['y'].tail(1)
+data = px.df.gapminder()
+fig = px.bar(data, x='year', y='pop',
+             hover_data=['x', 'y'], color='lifeExp',
+             labels={'pop':'population of Canada'}, height=400)
+fig.show()
 '''fig = go.Figure(y=df['y'])
 fig.update_layout(autosize=True,width=800, height=800,margin=dict(l=40, r=40, b=40, t=40))'''
 #st.plotly_chart(t)
