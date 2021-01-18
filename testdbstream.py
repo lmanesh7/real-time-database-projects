@@ -50,7 +50,7 @@ vals = vals_list[len(vals_list)-1:len(vals_list)-6:-1]
 st.markdown("""
 <style>
 .big-font {
-    font-size:200px !important;
+    font-size:50px !important;
 }
 </style>
 """, unsafe_allow_html=True)
