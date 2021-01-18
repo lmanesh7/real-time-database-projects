@@ -11,7 +11,13 @@ st.write(" " "Manesh's Room Humidity Monitoring!" " ")
 st.write("Humidity level chart")
 st.line_chart(df['y'])
 t = df['y'].tail(1)
-st.bar_chart(45)
+fig = go.Figure(data=df['y'])
+fig.update_layout(title=‘IRR’, autosize=False,
+width=800, height=800,
+margin=dict(l=40, r=40, b=40, t=40))
+st.plotly_chart(fig)
+
+
 st.write("Entire HighLighted DB")
 st.dataframe(df.style.highlight_max(axis=0))
 l=[0,10,20,25,40,50,70,75,95]
