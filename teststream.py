@@ -16,8 +16,8 @@ st.title(" " "Manesh's Room Humidity Monitoring!" " ")
 st.write("Humidity level chart")
 st.line_chart(df['y'])
 t = df['y'].tail(1)
-data = px.df.gapminder()
-fig = px.bar(data, x='year', y='pop',
+data = px.data.gapminder()
+fig = px.bar(data[df['y]], x='year', y='pop',
              hover_data=['x', 'y'], color='lifeExp',
              labels={'pop':'population of Canada'}, height=400)
 fig.show()
