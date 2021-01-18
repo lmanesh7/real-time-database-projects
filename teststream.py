@@ -16,14 +16,17 @@ st.title(" " "Manesh's Room Humidity Monitoring!" " ")
 st.write("Humidity level chart")
 st.line_chart(df['y'])
 t = df['y'].tail(1)
-data = px.data.gapminder()
-fig = px.bar(data[df['y']], color='lifeExp', height=400)
-fig.show()
-'''fig = go.Figure(y=df['y'])
-fig.update_layout(autosize=True,width=800, height=800,margin=dict(l=40, r=40, b=40, t=40))'''
+l=[]
+for i in df['y']:
+     l.append(i)
+#data = px.data.gapminder()
+#fig = px.bar(data[df['y']], color='lifeExp', height=400)
+#fig.show()
+#'''fig = go.Figure(y=df['y'])
+#fig.update_layout(autosize=True,width=800, height=800,margin=dict(l=40, r=40, b=40, t=40))'''
 #st.plotly_chart(t)
 
-
+"Present humidity:",l[-1]
 st.write("Entire HighLighted DB")
 st.dataframe(df.style.highlight_max(axis=0))
 l=[0,10,20,25,40,50,70,75,95]
