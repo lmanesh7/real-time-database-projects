@@ -54,10 +54,17 @@ st.markdown("""
 }
 </style>
 """, unsafe_allow_html=True)
+st.markdown("""
+<style>
+.medium-font {
+    font-size:30px !important;
+}
+</style>
+""", unsafe_allow_html=True)
 
 st.markdown('<p class="big-font">Lakshman\'s face recognition security login data</p>', unsafe_allow_html=True)
 #st.write(" " " Lakshman's face recognition security login data" " ")
-st.write("Recent five logins")
+st.markdown('<p class="medium-font">Recent five logins</p>',unsafe_allow_html=True)
 st.write("user:" +"\t"+ "date")
 for (i,j) in zip(keys,vals):
         st.write(i+":"+j)
