@@ -45,7 +45,18 @@ df['loginAsia/Kolkata']=df['LoginUTC'].dt.tz_localize('Asia/Kolkata')
 
 keys = keys_list[len(keys_list)-1:len(keys_list)-6:-1]
 vals = vals_list[len(vals_list)-1:len(vals_list)-6:-1]
-st.write(" " " Lakshman's face recognition security login data" " ")
+
+
+st.markdown("""
+<style>
+.big-font {
+    font-size:200px !important;
+}
+</style>
+""", unsafe_allow_html=True)
+
+st.markdown('<p class="big-font">Lakshman\'s face recognition security login data</p>', unsafe_allow_html=True)
+#st.write(" " " Lakshman's face recognition security login data" " ")
 st.write("Recent five logins")
 st.write("user:" +"\t"+ "date")
 for (i,j) in zip(keys,vals):
