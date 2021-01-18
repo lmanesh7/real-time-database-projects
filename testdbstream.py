@@ -35,7 +35,7 @@ for i in us.values():
     #print(i)
     for j in i:
         keys_list.append(j)
-        vals_list.append(i[j])
+        vals_list.append(i[j[0]])
 df = pd.DataFrame({"User":keys_list,"Login Time":vals_list})
 df['LoginUTC'] = pd.to_datetime(df['Login Time'])
 df['loginAsia/Kolkata']=df['LoginUTC'].dt.tz_localize('Asia/Kolkata')
