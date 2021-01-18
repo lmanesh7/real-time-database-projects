@@ -43,7 +43,7 @@ else:
 x = dt.datetime.now().strftime('%c')
 df['z'] = pd.to_datetime(df['z'],format="%d-%m-%Y")
 
-d3 = st.date_input("range",[dt.date(2021,1,9) , dt.date(2021,1,9)])
+d3 = st.date_input("search by date range",[dt.date(2021,1,9) , dt.date(2021,1,9)])
 #st.write(d3)
 try:
    min1 = d3[0]
