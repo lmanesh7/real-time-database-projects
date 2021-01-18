@@ -10,7 +10,7 @@ st.write(" " "Manesh's Room Humidity Monitoring!" " ")
 
 st.write("Humidity level chart")
 st.line_chart(df['y'])
-st.bar_chart(df['y'])
+st.bar_chart(df['y'].tail(1))
 st.write("Entire HighLighted DB")
 st.dataframe(df.style.highlight_max(axis=0))
 l=[0,10,20,25,40,50,70,75,95]
