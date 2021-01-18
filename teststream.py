@@ -15,7 +15,7 @@ st.line_chart(df['y'])
 t = df['y'].tail(1)
 '''fig = go.Figure(y=df['y'])
 fig.update_layout(autosize=True,width=800, height=800,margin=dict(l=40, r=40, b=40, t=40))'''
-st.plotly_chart(t)
+#st.plotly_chart(t)
 
 
 st.write("Entire HighLighted DB")
