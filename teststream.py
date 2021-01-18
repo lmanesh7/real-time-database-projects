@@ -1,3 +1,5 @@
+#author="lakshman_manesh"
+
 import streamlit as st
 import pandas as pd
 import datetime as dt
@@ -8,7 +10,7 @@ df = pd.read_csv("sensor.csv")
 
 #df1 = df.drop(['unnamed'],axis=1)
  
-st.write(" " "Manesh's Room Humidity Monitoring!" " ")
+st.title(" " "Manesh's Room Humidity Monitoring!" " ")
 
 st.write("Humidity level chart")
 st.line_chart(df['y'])
