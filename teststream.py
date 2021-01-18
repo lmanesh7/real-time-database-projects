@@ -17,7 +17,7 @@ st.write("Humidity level chart")
 st.line_chart(df['y'])
 t = df['y'].tail(1)
 data = px.data.gapminder()
-fig = px.bar(data[df['y]], color='lifeExp', height=400)
+fig = px.bar(data[df['y']], color='lifeExp', height=400)
 fig.show()
 '''fig = go.Figure(y=df['y'])
 fig.update_layout(autosize=True,width=800, height=800,margin=dict(l=40, r=40, b=40, t=40))'''
