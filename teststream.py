@@ -28,7 +28,10 @@ n=st.radio("frequently checked values",l)
 if n in l:
     st.write("Your selected value list is here!")
     st.write(df.query("y==@n"))
-
+st.write("slide the value you want to display")
+n1 = st.slider('100')
+st.write("Your slider selected value list is here!")
+st.write(df.query("y==@n1"))
 min = st.sidebar.number_input("From level",min_value=10)
 max = st.sidebar.number_input("To level",min_value=10,value=95)
 if min>max:
