@@ -1,3 +1,5 @@
+#Code_Author = lakshman_manesh
+
 import streamlit as st
 import pandas as pd
 import pyrebase
@@ -50,7 +52,9 @@ st.write("Water Level: %s" %k)
 st.write("Motor state: %s" %motorlist[-1])
 if st.checkbox("show"):
     st.write(df)
-option = st.sidebar.selectbox("select one", [x for x in range(100)])
+#option = st.sidebar.selectbox("select one", [x for x in range(100)])
 latest = st.empty()
 st.write("water level percentage: "+ k)
 bar = st.progress(int(k))
+st.write("Designed and Developed by lakshman manesh")
+#designed and developed by lakshman_manesh
