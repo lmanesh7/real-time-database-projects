@@ -56,5 +56,5 @@ if st.checkbox("show"):
 latest = st.empty()
 st.write("water level percentage: "+ k)
 bar = st.progress(int(k))
-st.write("Designed and Developed by lakshman manesh")
+#st.write("Designed and Developed by lakshman manesh")
 #designed and developed by lakshman_manesh
