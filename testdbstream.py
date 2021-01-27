@@ -68,8 +68,8 @@ st.markdown('<p class="medium-font">Recent five logins</p>',unsafe_allow_html=Tr
 st.write("user:" +"\t"+ "date")
 for (i,j) in zip(keys,vals):
         st.write(i+":"+j)
-      
-st.write(df)
+if st.checkbox("show DB"):     
+    st.write(df)
 
 
 d3 = st.date_input("Enter start  and end date range ",[dt.datetime.now(),dt.datetime.now()])
