@@ -54,7 +54,7 @@ if st.checkbox("show"):
 #option = st.sidebar.selectbox("select one", [x for x in range(100)])
 latest = st.empty()
 k=(int(k)/30)*100
-st.write("water level percentage: "+ k)
+st.write("water level percentage %f: "+ %k)
 bar = st.progress(int(k))
 #st.write("Designed and Developed by lakshman manesh")
 #designed and developed by lakshman_manesh
