@@ -53,7 +53,7 @@ if st.checkbox("show"):
     st.write(df)
 #option = st.sidebar.selectbox("select one", [x for x in range(100)])
 latest = st.empty()
-k=(k/30)*100
+k=(int(k)/30)*100
 st.write("water level percentage: "+ k)
 bar = st.progress(int(k))
 #st.write("Designed and Developed by lakshman manesh")
