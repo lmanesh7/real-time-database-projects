@@ -28,8 +28,7 @@ for i in us.values():
     # print(i)
     for j in i:
         keys_list.append(j)
-        t = i[j]
-        vals_list.append(t)
+        vals_list.append(i[j])
 #df = pd.DataFrame({"water level": keys_list, "Time": vals_list})
 #print(keys_list)
 #print(vals_list)
