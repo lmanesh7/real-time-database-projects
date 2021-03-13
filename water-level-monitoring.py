@@ -49,7 +49,7 @@ st.title("water level monitoring system")
 k=keys_list[-1]
 st.write("Water Level: %s" %k)
 st.write("Motor state: %s" %motorlist[-1])
-if st.checkbox("show"):
+if st.checkbox("show entire database"):
     st.write(df)
 #option = st.sidebar.selectbox("select one", [x for x in range(100)])
 latest = st.empty()
