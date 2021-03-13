@@ -45,7 +45,7 @@ for i in vals_list:
 #print(yearlist)
 
 df = pd.DataFrame({"water level":keys_list,"time":daylist,"year":yearlist,"motor state":motorlist})
-st.title("Sushma's water level monitoring system")
+st.title("water level monitoring system")
 k=keys_list[-1]
 st.write("Water Level: %s" %k)
 st.write("Motor state: %s" %motorlist[-1])
