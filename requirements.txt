@@ -10,6 +10,7 @@ streamlit==0.74.1
 timezones==2.0.7
 python-dotenv==0.15.0
 plotly==4.14.3
-requests
+urllib3==1.26.15 
+requests-toolbelt==0.10.1
 lxml
 cssselect
